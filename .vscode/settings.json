@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "memory": "cpp",
+        "vector": "cpp",
+        "mutex": "cpp",
+        "string": "cpp",
+        "thread": "cpp",
+        "__split_buffer": "cpp",
+        "algorithm": "cpp",
+        "type_traits": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "iosfwd": "cpp",
+        "new": "cpp"
+    }
+}
