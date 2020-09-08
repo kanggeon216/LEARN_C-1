@@ -1,6 +1,22 @@
 #include <iostream>
+#include <utility>
 using namespace std;
 
+/**
+ *  swap()
+ *  make_pair()
+ *  forward()
+ *  move()
+ *  move_if_noexcept()
+ *  decival()
+ * 
+ *  types:
+ *  pair
+ *  piecewise_construct_t
+ * 
+ *  namespace:
+ *  rel_ops
+ */
 int main()
 {
     string v1[5] = {"one", "two", "three", "four", "five"};

@@ -1,9 +1,13 @@
 #include <iostream>
+#include <algorithm>
 #include <vector>
 using namespace std;
 
 int main()
 {
+    /**
+     * for_each
+     */
     vector<int> in_v{1, 2, 3, 4};
     vector<int> out_v;
     transform(in_v.begin(), in_v.end(), back_inserter(out_v), [](const int &value) { return value * 3; });

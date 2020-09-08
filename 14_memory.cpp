@@ -3,21 +3,24 @@
 #include <memory>
 #include <utility>
 #include <cstddef>
+#include <string>
 
 using namespace std;
 
 class strc
 {
-private:
-    char *data = nullptr;
-
 public:
+    string data;
+
     strc();
-    strc(const char *s);
+    strc(string data) : data(data)
+    {
+        cout << "constructing \t" << data << endl;
+    };
     ~strc()
     {
-        cout << "deleting " << data;
-        delete[] data;
+        cout << "destructing \t" << data << endl;
+        data = "";
     }
     strc &operator=(strc);
     friend ostream &operator<<(ostream &os, strc str);
@@ -25,25 +28,29 @@ public:
 
 ostream &operator<<(ostream &os, strc str)
 {
-    if (str.data == nullptr)
-    {
-        os << "null";
-    }
-    os << *str.data;
-    return os;
+    return os << str.data << endl;
+}
+
+template <typename T>
+void display(T ptr)
+{
+    cout << ptr << "\t" << (ptr ? (*ptr).data : "null");
 }
 
 int main()
 {
-    std::unique_ptr<strc> a(new strc("one")); // auto a = std::make_unique<strc>("one")
-    cout << "unique pointer \t " << *a << endl;
+    cout << "[1] Creating \n";
+    std::unique_ptr<strc> a(new strc("A")); // auto a = std::make_unique<strc>("one")
+    std::shared_ptr<strc> b(new strc("B"));
 
-    a.reset(new strc("three"));
-    cout << "reset pointer \t " << *a << endl;
+    cout << "[2] Resetting \n";
+    a.reset(b);
+    cout << "after *a \t" << *a << endl;
 
-    auto b = std::move(a);
-    cout << "a \t" << a << endl;
-    cout << "*b \t" << *b << endl;
+    cout << "[3] Moving \n";
+    auto b = move(a);
+    cout << "after a \t" << a << endl;
+    cout << "after *b \t" << *b;
     //    disp(b);
     //    disp(c);
     //

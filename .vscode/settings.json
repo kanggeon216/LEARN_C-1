@@ -11,6 +11,8 @@
         "iostream": "cpp",
         "ostream": "cpp",
         "iosfwd": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "chrono": "cpp",
+        "typeinfo": "cpp"
     }
 }
