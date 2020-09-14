@@ -69,7 +69,6 @@ int main()
     while (waitKey(50))
     {
         board.draw();
-        cout << (int)Status::PROGRESS << endl;
         if (status != Status::PROGRESS)
             break;
     }
