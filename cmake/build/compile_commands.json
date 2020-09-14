@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/sean/github/LEARN_C/cmake/build",
+  "command": "/usr/bin/clang++    -g -DDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/01_gflags.dir/01_gflags.cpp.o -c /Users/sean/github/LEARN_C/cmake/01_gflags.cpp",
+  "file": "/Users/sean/github/LEARN_C/cmake/01_gflags.cpp"
+}
+]

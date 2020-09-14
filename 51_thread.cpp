@@ -5,34 +5,26 @@ int add(int a, int b);
 
 using namespace std;
 
-bool running = true;
-
-void yell(const char *name)
-{
-    unsigned int count = 0;
-    cout << "yell thread \t" << this_thread::get_id() << "\n";
-    while (running)
-    {
-        count++;
-    }
-    cout << "Total Counting \t" << count << endl;
-}
-
-void counter()
-{
-    cout << "counter thread \t" << this_thread::get_id() << "\n";
-    for (int i = 0; i < 100; i++)
-    {
-        this_thread::sleep_for(chrono::seconds(1));
-        cout << i << "\t second" << endl;
-        running = false;
-    }
-}
-
 int main()
 {
-    thread watch(counter);
-    thread person(yell, "sean");
-    watch.detach();
-    person.join();
+    count_sec();
+
+    class thread_guard
+    {
+        std::thread &t;
+
+    public:
+        explicit thread_guard(thread &t_) : t(t_)
+        {
+        }
+        ~thread_guard()
+        {
+            if (t.joinable())
+            {
+                t.join();
+            }
+        }
+        thread_guard(thread_guard const &) = delete;
+        thread_guard operator=(thread_guard const &) = delete;
+    };
 }

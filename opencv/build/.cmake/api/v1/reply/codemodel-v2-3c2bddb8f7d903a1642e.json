@@ -1,0 +1,86 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "DisplayImage",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "01_canny::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-01_canny-Debug-f4172f6e37139699f588.json",
+					"name" : "01_canny",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "02_template::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-02_template-Debug-ac4c2b93de8b683a9332.json",
+					"name" : "02_template",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "03_video::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-03_video-Debug-9afc458cef77b09992c4.json",
+					"name" : "03_video",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RUN::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RUN-Debug-9d45cfbbc6db137bfc19.json",
+					"name" : "RUN",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/sean/github/LEARN_C/opencv/build",
+		"source" : "/Users/sean/github/LEARN_C/opencv"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

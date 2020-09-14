@@ -4,7 +4,7 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/local/lib/opencv/build"
+                "/usr/local/lib/opencv/include"
             ],
             "defines": [],
             "macFrameworkPath": [
@@ -13,7 +13,13 @@
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c11",
             "cppStandard": "c++20",
-            "intelliSenseMode": "clang-x64"
+            "intelliSenseMode": "gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "browse": {
+                "path": [
+                    "/usr/local/lib/opencv/include"
+                ]
+            }
         }
     ],
     "version": 4

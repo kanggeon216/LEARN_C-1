@@ -1,0 +1,6 @@
+/Users/sean/github/LEARN_C/opencv/build/CMakeFiles/rebuild_cache.dir
+/Users/sean/github/LEARN_C/opencv/build/CMakeFiles/edit_cache.dir
+/Users/sean/github/LEARN_C/opencv/build/CMakeFiles/RUN.dir
+/Users/sean/github/LEARN_C/opencv/build/CMakeFiles/03_video.dir
+/Users/sean/github/LEARN_C/opencv/build/CMakeFiles/02_template.dir
+/Users/sean/github/LEARN_C/opencv/build/CMakeFiles/01_canny.dir

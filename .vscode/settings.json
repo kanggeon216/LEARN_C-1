@@ -14,5 +14,7 @@
         "new": "cpp",
         "chrono": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled",
+    "cmake.sourceDirectory": "${workspaceFolder}/pybind"
 }

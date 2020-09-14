@@ -6,7 +6,6 @@ using namespace std;
  *  swap()
  *  make_pair()
  *  forward()
- *  move()
  *  move_if_noexcept()
  *  decival()
  * 
@@ -17,7 +16,7 @@ using namespace std;
  *  namespace:
  *  rel_ops
  */
-int main()
+void move_()
 {
     string v1[5] = {"one", "two", "three", "four", "five"};
     string v2[5];
@@ -28,6 +27,9 @@ int main()
     for_each(begin(v1), end(v1), [](const string &s) { cout << s << " "; });
     cout << endl;
     for_each(begin(v2), end(v2), [](const string &s) { cout << s << " "; });
-
+}
+int main()
+{
+    move_();
     return 0;
 }

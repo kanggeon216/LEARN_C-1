@@ -1,7 +1,8 @@
 #include <iostream>
 #include <typeinfo>
 using namespace std;
-int main()
+
+void get_size()
 {
     cout << "bool \t" << sizeof(bool) << endl;
     cout << "char \t" << sizeof(char) << endl;
@@ -14,4 +15,8 @@ int main()
 
     bool *p_bool;
     cout << "p_bool \t" << sizeof(p_bool) << endl;
+}
+int main()
+{
+    get_size();
 }
