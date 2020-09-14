@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/Users/sean/github/LEARN_C/pybind/build",
-  "command": "/usr/bin/clang++  -Dcmake_example_EXPORTS -isystem /opt/local/Library/Frameworks/Python.framework/Versions/3.8/include/python3.8 -isystem /Users/sean/github/LEARN_C/pybind/pybind11/include  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIC -fvisibility=hidden   -std=gnu++11 -o CMakeFiles/cmake_example.dir/example.o -c /Users/sean/github/LEARN_C/pybind/example.cpp",
-  "file": "/Users/sean/github/LEARN_C/pybind/example.cpp"
-}
-]

@@ -1,5 +1,0 @@
-/Users/sean/github/LEARN_C/pybind/build/CMakeFiles/rebuild_cache.dir
-/Users/sean/github/LEARN_C/pybind/build/CMakeFiles/edit_cache.dir
-/Users/sean/github/LEARN_C/pybind/build/CMakeFiles/cmake_example.dir
-/Users/sean/github/LEARN_C/pybind/build/pybind11/CMakeFiles/rebuild_cache.dir
-/Users/sean/github/LEARN_C/pybind/build/pybind11/CMakeFiles/edit_cache.dir
